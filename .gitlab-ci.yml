@@ -8,10 +8,6 @@ stages:
 variables:
   BUILD_NAME: ExampleProjectName
 
-.unity_before_script: &unity_before_script
-  before_script:
-  - ./ci/before_script.sh
-
 .test: &test
   stage: test
   <<: *unity_before_script
